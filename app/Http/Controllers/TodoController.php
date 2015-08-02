@@ -9,7 +9,7 @@ use App\Todo;
 class TodoController extends Controller {
 	public function index()
 	{
-		$data=Todo::all();
+		$data=Todo::paginate(5);
 		return view('home')->with('data',$data);
 	}
 

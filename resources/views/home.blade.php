@@ -27,6 +27,7 @@
                         </tr>
                     @endforeach
                 </table>
+                <?php echo $data->render(); ?>
             </div>
         </div>
     </div>
